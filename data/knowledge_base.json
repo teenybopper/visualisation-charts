@@ -1,0 +1,170 @@
+[
+  {
+    "schema_pattern": "[numeric]",
+    "description": "Single continuous variable distribution",
+    "recommended_plots": ["Histogram", "Box plot", "Violin plot", "KDE density plot", "Rug plot", "CDF plot", "Strip plot"],
+    "plotly_templates": ["plotly", "ggplot2", "seaborn", "simple_white", "plotly_dark"]
+  },
+  {
+    "schema_pattern": "[categorical]",
+    "description": "Single categorical variable distribution",
+    "recommended_plots": ["Bar chart", "Horizontal bar chart", "Pie chart", "Donut chart", "Treemap", "Sunburst chart", "Word cloud"],
+    "plotly_templates": ["plotly", "presentation", "ggplot2", "seaborn"]
+  },
+  {
+    "schema_pattern": "[datetime]",
+    "description": "Single time variable",
+    "recommended_plots": ["Line plot (frequency)", "Area chart", "Histogram of time intervals", "Calendar heatmap", "Seasonality decomposition"],
+    "plotly_templates": ["plotly", "simple_white", "plotly_dark"]
+  },
+  {
+    "schema_pattern": "[numeric, numeric]",
+    "description": "Two continuous variables",
+    "recommended_plots": ["Scatter plot", "Regression line", "Hexbin plot", "2D KDE contour", "Bubble chart", "3D scatter"],
+    "plotly_templates": ["plotly", "seaborn", "ggplot2", "plotly_dark"]
+  },
+  {
+    "schema_pattern": "[categorical, numeric]",
+    "description": "One categorical and one numeric variable",
+    "recommended_plots": ["Bar chart (aggregated)", "Horizontal bar", "Box plot", "Violin plot", "Lollipop chart", "Swarm plot"],
+    "plotly_templates": ["ggplot2", "seaborn", "presentation", "plotly"]
+  },
+  {
+    "schema_pattern": "[datetime, numeric]",
+    "description": "Time series of numeric values",
+    "recommended_plots": ["Line chart", "Area chart", "Rolling average", "Stacked area", "Step line plot", "Candlestick chart"],
+    "plotly_templates": ["plotly", "plotly_dark", "simple_white"]
+  },
+  {
+    "schema_pattern": "[categorical, categorical]",
+    "description": "Relationship between two categorical variables",
+    "recommended_plots": ["Grouped bar chart", "Stacked bar", "Heatmap", "Mosaic plot", "Sankey diagram", "Network diagram"],
+    "plotly_templates": ["plotly", "ggplot2", "seaborn", "presentation"]
+  },
+  {
+    "schema_pattern": "[numeric, numeric, categorical]",
+    "description": "Two continuous variables grouped by category",
+    "recommended_plots": ["Colored scatter", "Bubble chart", "Faceted scatter", "3D scatter by category", "Parallel coordinates"],
+    "plotly_templates": ["seaborn", "ggplot2", "plotly_dark"]
+  },
+  {
+    "schema_pattern": "[categorical, numeric, numeric]",
+    "description": "Category with two numeric measures",
+    "recommended_plots": ["Grouped bar chart", "Stacked bar", "Faceted bar", "Dumbbell plot", "Box plot grouped"],
+    "plotly_templates": ["plotly", "presentation", "ggplot2"]
+  },
+  {
+    "schema_pattern": "[datetime, categorical, numeric]",
+    "description": "Time series split by categories",
+    "recommended_plots": ["Multi-line chart", "Stacked area", "Ribbon plot", "Heatmap over time", "Streamgraph"],
+    "plotly_templates": ["plotly", "simple_white", "plotly_dark"]
+  },
+  {
+    "schema_pattern": "[geospatial]",
+    "description": "Single location field (lat/long, country, city)",
+    "recommended_plots": ["Choropleth map", "Scatter geo", "Bubble map", "Heatmap map", "Density map"],
+    "plotly_templates": ["plotly", "plotly_dark", "seaborn"]
+  },
+  {
+    "schema_pattern": "[geospatial, numeric]",
+    "description": "Location with numeric value",
+    "recommended_plots": ["Choropleth", "Bubble map", "Proportional symbol map", "Cartogram"],
+    "plotly_templates": ["plotly", "simple_white"]
+  },
+  {
+    "schema_pattern": "[geospatial, categorical]",
+    "description": "Location with categories",
+    "recommended_plots": ["Categorical choropleth", "Marker map", "Clustered symbol map"],
+    "plotly_templates": ["plotly", "ggplot2"]
+  },
+  {
+    "schema_pattern": "[text]",
+    "description": "Unstructured text data",
+    "recommended_plots": ["Word cloud", "Bar chart of word frequency", "N-gram plot", "Sentiment distribution"],
+    "plotly_templates": ["plotly", "presentation"]
+  },
+  {
+    "schema_pattern": "[numeric, datetime, categorical]",
+    "description": "Time series with numeric measure split by category",
+    "recommended_plots": ["Faceted time-series", "Stacked line", "Group rolling averages", "Heatmap calendar"],
+    "plotly_templates": ["plotly", "ggplot2"]
+  },
+  {
+    "schema_pattern": "[numeric, categorical, categorical]",
+    "description": "Numeric measure across two categorical dimensions",
+    "recommended_plots": ["Stacked bar", "Grouped bar", "Treemap", "Heatmap", "Mosaic plot"],
+    "plotly_templates": ["plotly", "presentation", "seaborn"]
+  },
+  {
+    "schema_pattern": "[numeric, numeric, datetime]",
+    "description": "Two numeric measures over time",
+    "recommended_plots": ["Dual-axis line", "Scatter over time", "Rolling correlation plot"],
+    "plotly_templates": ["plotly", "plotly_dark"]
+  },
+  {
+    "schema_pattern": "[categorical, categorical, numeric]",
+    "description": "Numeric values grouped by two categories",
+    "recommended_plots": ["Stacked bar", "Grouped bar", "Heatmap", "Mosaic"],
+    "plotly_templates": ["plotly", "ggplot2"]
+  },
+  {
+    "schema_pattern": "[datetime, numeric, numeric]",
+    "description": "Two numeric measures across time",
+    "recommended_plots": ["Dual line", "Scatter over time", "Rolling average comparison"],
+    "plotly_templates": ["plotly", "seaborn"]
+  },
+  {
+    "schema_pattern": "[high-dimensional (PCA)]",
+    "description": "More than 5+ numeric features reduced",
+    "recommended_plots": ["2D PCA scatter", "3D PCA scatter", "Parallel coordinates", "Heatmap of features"],
+    "plotly_templates": ["plotly", "plotly_dark", "seaborn"]
+  },
+  {
+    "schema_pattern": "[network]",
+    "description": "Node-link structure data",
+    "recommended_plots": ["Network graph", "Sankey diagram", "Chord diagram"],
+    "plotly_templates": ["plotly", "presentation"]
+  },
+  {
+    "schema_pattern": "[time series panel]",
+    "description": "Multiple entities with time series data",
+    "recommended_plots": ["Panel line plots", "Small multiples", "Heatmap of series", "Streamgraph"],
+    "plotly_templates": ["plotly", "simple_white"]
+  },
+  {
+    "schema_pattern": "[categorical hierarchy]",
+    "description": "Hierarchical categories (e.g., Region → Country → City)",
+    "recommended_plots": ["Treemap", "Sunburst", "Icicle chart"],
+    "plotly_templates": ["plotly", "presentation"]
+  },
+  {
+    "schema_pattern": "[multivariate time series]",
+    "description": "Several numeric variables over time",
+    "recommended_plots": ["Multi-line chart", "Heatmap", "Parallel coordinates", "Rolling correlations"],
+    "plotly_templates": ["plotly", "plotly_dark"]
+  },
+  {
+    "schema_pattern": "[event log]",
+    "description": "Event sequences with timestamp",
+    "recommended_plots": ["Gantt chart", "Timeline chart", "Event heatmap"],
+    "plotly_templates": ["plotly", "presentation"]
+  },
+  {
+    "schema_pattern": "[categorical proportions over time]",
+    "description": "Distribution of categories over a time axis",
+    "recommended_plots": ["Stacked area chart", "Streamgraph", "Stacked bar over time"],
+    "plotly_templates": ["plotly", "ggplot2"]
+  },
+  {
+    "schema_pattern": "[multi-level categorical, numeric]",
+    "description": "Numeric values aggregated across nested categories",
+    "recommended_plots": ["Treemap", "Sunburst", "Icicle", "Grouped bar"],
+    "plotly_templates": ["plotly", "presentation"]
+  },
+  {
+    "schema_pattern": "[correlation matrix]",
+    "description": "Pairwise correlations of numeric variables",
+    "recommended_plots": ["Heatmap", "Clustered heatmap", "Network graph (correlations > threshold)"],
+    "plotly_templates": ["plotly", "seaborn"]
+  }
+]

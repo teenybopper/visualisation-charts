@@ -1,0 +1,8 @@
+EMBED_MODEL: "sentence-transformers/all-MiniLM-L6-v2"
+
+GEN_MODEL: "Qwen/Qwen3-4B-Instruct-2507"
+TEMPRATURE: 0.7
+
+TOP_K: 5
+
+QUERY: ""
